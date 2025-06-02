@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Tag(name = "硅谷小智")
+@Tag(name = "EasyHelp")
 @RestController
-@RequestMapping("/xiaozhi")
-public class XiaozhiController {
+@RequestMapping("/easyhelp")
+public class EasyHelpController {
     @Autowired
     private Assistant assistant;
     @Operation(summary = "对话")
