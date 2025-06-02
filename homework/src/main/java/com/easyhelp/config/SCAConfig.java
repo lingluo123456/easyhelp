@@ -16,7 +16,7 @@ public class SCAConfig {
     ChatMemoryProvider chatMemoryProvider() {
         return memoryId -> MessageWindowChatMemory.builder()
                 .id(memoryId)
-                .maxMessages(10)
+                .maxMessages(20)
                 .chatMemoryStore(mongoChatMemoryStore)//配置持久化对象
                 .build();
     }

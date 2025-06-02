@@ -11,8 +11,8 @@ public class Ct {
 
     @Test
     public void test() {
-        System.out.println(assistant.chat(1, "我是张三"));
-        System.out.println(assistant.chat(1, "我是谁"));
-        System.out.println(assistant.chat(2, "我是谁"));
+        System.out.println(assistant.chat(1L, "我是张三"));
+        System.out.println(assistant.chat(1L, "我是谁"));
+        System.out.println(assistant.chat(2L, "我是谁"));
     }
 }
