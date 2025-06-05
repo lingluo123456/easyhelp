@@ -7,7 +7,8 @@ import dev.langchain4j.service.spring.AiService;
 
 @AiService(
         chatMemory = "chatMemory",// 配置记忆
-        chatMemoryProvider = "chatMemoryProvider"
+        chatMemoryProvider = "chatMemoryProvider",
+        tools = "appointmentTools"
 )
 public interface Assistant {
     @SystemMessage(fromResource = "easyhelp-prompt-template.txt")// 系统消息提示词
