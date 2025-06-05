@@ -85,9 +85,9 @@ public class EmbeddingTest {
 
         //使用FileSystemDocumentLoader读取指定目录下的知识库文档
         //并使用默认的文档解析器对文档进行解析
-        Document document1 = FileSystemDocumentLoader.loadDocument("D:/knowledge/医院信息.md");
-        Document document2 = FileSystemDocumentLoader.loadDocument("D:/knowledge/科室信息.md");
-        Document document3 = FileSystemDocumentLoader.loadDocument("D:/knowledge/神经内科.md");
+        Document document1 = FileSystemDocumentLoader.loadDocument("D:/硅谷小智/硅谷小智（医疗版）/资料/knowledge/knowledge/医院信息.md");
+        Document document2 = FileSystemDocumentLoader.loadDocument("D:/硅谷小智/硅谷小智（医疗版）/资料/knowledge/knowledge/科室信息.md");
+        Document document3 = FileSystemDocumentLoader.loadDocument("D:/硅谷小智/硅谷小智（医疗版）/资料/knowledge/knowledge/神经内科.md");
         List<Document> documents = Arrays.asList(document1, document2, document3);
 
         //文本向量化并存入向量数据库：将每个片段进行向量化，得到一个嵌入向量
