@@ -21,7 +21,6 @@ public interface SeparateChatAssistant {
     //@SystemMessage("你是我的好朋友，请用粤语回答问题。")//系统消息提示词
     String chat(@MemoryId int memoryId, @UserMessage String userMessage);
 
-
     @UserMessage("你是我的好朋友，请用粤语回答问题。{{message}}")
     String chat2(@MemoryId int memoryId, @V("message") String userMessage);
 

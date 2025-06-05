@@ -33,7 +33,7 @@ public class MongoChatMemoryStore implements ChatMemoryStore {
         Query query = new Query(criteria);
         Update update = new Update();
         update.set("content", ChatMessageSerializer.messagesToJson(messages));
-//根据query条件能查询出文档，则修改文档；否则新增文档
+    //根据query条件能查询出文档，则修改文档；否则新增文档
         mongoTemplate.upsert(query, update, ChatMessages.class);
     }
     @Override

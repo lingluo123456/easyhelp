@@ -8,10 +8,11 @@ import dev.langchain4j.service.spring.AiService;
 @AiService(
         chatMemory = "chatMemory",
         chatMemoryProvider = "chatMemoryProvider",
-        tools = "appointmentTools"
+        tools = "appointmentTools",
+        contentRetriever = "contentRetrieverEasyHelp"
 )
 public interface Assistant {
-    @SystemMessage(fromResource = "easyhelp-prompt-template.txt")// 系统消息提示词
+    @SystemMessage(fromResource = "EasyHelp-prompt-template.txt")
     String chat(@MemoryId Long memoryId,
                 @UserMessage String message);
 }
