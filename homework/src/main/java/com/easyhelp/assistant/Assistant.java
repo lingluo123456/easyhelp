@@ -11,7 +11,7 @@ import reactor.core.publisher.Flux;
         streamingChatModel= "qwenStreamingChatModel",
         chatMemoryProvider = "chatMemoryProvider",
         tools = "appointmentTools",
-        contentRetriever = "contentRetrieverEasyHelp"
+        contentRetriever = "contentRetrieverEasyHelpPinecone"
 )
 public interface Assistant {
     @SystemMessage(fromResource = "EasyHelp-prompt-template.txt")
