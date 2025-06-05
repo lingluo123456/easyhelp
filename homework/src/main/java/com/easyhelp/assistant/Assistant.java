@@ -6,7 +6,7 @@ import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.spring.AiService;
 
 @AiService(
-        chatMemory = "chatMemory",// 配置记忆
+        chatMemory = "chatMemory",
         chatMemoryProvider = "chatMemoryProvider",
         tools = "appointmentTools"
 )
